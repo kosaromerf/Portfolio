@@ -1,0 +1,92 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+#root {
+  background-color: #f5f6f7;
+}
+
+#root .div {
+  height: 90vh;
+}
+
+.about {
+  background-color: red;
+}
+
+.skill {
+  background-color: blue;
+}
+
+.pro {
+  background-color: red;
+}
+
+.cert {
+  background-color: blue;
+}
+
+.form {
+  background-color: red;
+}
+
+.foot {
+  background-color: blue;
+}
+
+
+#header {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 5%;
+  background-color: #f5f6f7;
+  position: sticky;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  transition: opacity 0.5s ease;
+}
+
+#header.is-visible,
+#header:hover {
+  opacity: 1;
+}
+
+#logo {
+  height: 10vh;
+}
+
+#logo:hover {
+  cursor: pointer;
+}
+
+#navbar {
+  font-size: 2rem;
+  height: 10vh;
+  display: flex;
+  align-items: center;
+}
+
+.link {
+  text-decoration: none;
+  margin: 50px;
+  font-weight: 900;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  transition: 0.2s ease-in-out;
+  color: #0a0a23
+}
+
+.link:hover {
+  font-size: 2.5rem;
+  text-shadow: 1px 1px 3px black;
+}
+
+#welcome {
+  background-color: #0a0a23;
+  height: 90vh;
+  color: white;
+}
