@@ -10,7 +10,6 @@ import Footer from "./Components/Footer";
 import headerVisibility from "./Utils/headerVisibility";
 
 const App = () => {
-  headerVisibility();
   return (
     <div>
       <Header />

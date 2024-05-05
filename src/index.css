@@ -1,20 +1,22 @@
+/* Reset */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: Roboto;
 }
 
 #root {
   background-color: #f5f6f7;
 }
 
+
+/* temp */
 #root .div {
   height: 90vh;
 }
 
-.about {
-  background-color: red;
-}
+
 
 .skill {
   background-color: blue;
@@ -36,7 +38,7 @@
   background-color: blue;
 }
 
-
+/* Header Styles */
 #header {
   display: flex;
   width: 100%;
@@ -85,8 +87,85 @@
   text-shadow: 1px 1px 3px black;
 }
 
+
+/* Welcome styles */
 #welcome {
-  background-color: #0a0a23;
-  height: 90vh;
+  background-color: #0f172a;
+  height: 70vh;
   color: white;
+  padding: 5% 10% 5% 10%
+}
+
+#welcome h1 {
+  font-weight: 900;
+  text-shadow: 0.5px 0.5px white;
+  font-size: 4rem;
+}
+
+#welcome h2 {
+  font-size: 2rem;
+}
+
+#welcomeMop {
+  width: 35%;
+  border-radius: 50%;
+  float: right;
+}
+
+
+.typewriter {
+  width: 0;
+  overflow: hidden;
+  white-space: nowrap;
+  margin: 0 auto;
+  letter-spacing: .15em;
+  animation-name: typing;
+  animation-duration: 1s;
+  animation-timing-function: linear;
+  animation-fill-mode: forwards;
+}
+
+@keyframes typing {
+  from {
+    width: 0
+  }
+
+  to {
+    width: 65%
+  }
+}
+
+li.typewriter {
+  font-size: 1.5rem;
+  font-weight: 100;
+  text-indent: 5%;
+  margin-top: 2%;
+  text-align: left;
+  font-style: italic;
+
+}
+
+.typewriterContainer>ul {
+  margin-top: 3%;
+  display: flex;
+  flex-direction: column;
+  margin-right: 5%;
+}
+
+/* About styles */
+
+#about {
+  background-color: #f5f6f7;
+  height: 40vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  margin: 5%
+}
+
+.divided {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin: 7%;
 }
