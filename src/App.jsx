@@ -5,7 +5,6 @@ import About from "./Components/About";
 import Skills from "./Components/Skills";
 import Projects from "./Components/Projects";
 
-import Form from "./Components/Form";
 import Footer from "./Components/Footer";
 
 const App = () => {
@@ -16,7 +15,6 @@ const App = () => {
       <About />
       <Skills />
       <Projects />
-      <Form />
       <Footer />
     </div>
   );

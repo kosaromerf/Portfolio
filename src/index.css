@@ -6,27 +6,14 @@
   font-family: Roboto;
 }
 
+/* 
+border: 1px dashed red; 
+*/
+
 #root {
   background-color: #f5f6f7;
 }
 
-
-/* temp */
-#root .div {
-  height: 90vh;
-}
-
-.pro {
-  background-color: red;
-}
-
-.form {
-  background-color: blue;
-}
-
-.foot {
-  background-color: red;
-}
 
 /* Header Styles */
 #header {
@@ -199,18 +186,17 @@ li.typewriter {
 /* Skills styles */
 
 #skills {
-  background-color: #0a0a23;
+  background-color: #f5f6f7;
   display: flex;
-
   flex-direction: column;
   align-items: center;
   padding: 3% 5% 3% 5%;
-  color: white;
+  color: #0a0a23;
 
 }
 
 #skills h2 {
-  text-shadow: 0.5px 0.5px 2px white;
+  text-shadow: 0.5px 0.5px 2px #0a0a23;
   font-weight: 900;
   font-size: 2rem;
 
@@ -422,4 +408,54 @@ li.typewriter {
   font-weight: 900;
   background-color: #0f172a;
 
+}
+
+/* footer styles */
+
+#footer {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  background-color: #0a0a23;
+  color: #f5f6f7;
+  padding: 2%;
+}
+
+
+#contact {
+
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#documents {
+
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#contact h3,
+#documents h3 {
+  margin: 3%;
+}
+
+#contact p,
+#documents p {
+  margin: 3%;
+}
+
+#contact p a,
+#documents p a {
+  color: #f5f6f7;
+  text-decoration: none;
+}
+
+#copyright {
+  text-align: center;
+  background-color: #0a0a23;
+  color: #f5f6f7
 }

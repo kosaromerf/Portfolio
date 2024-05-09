@@ -16,9 +16,6 @@ const About = () => {
           </p>
         </section>
       </div>
-      <a href="#" target="#" id="resumeLink">
-        Details
-      </a>
     </div>
   );
 };
