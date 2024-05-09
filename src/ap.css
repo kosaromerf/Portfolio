@@ -1,0 +1,398 @@
+/* Header Styles */
+
+
+
+/* Welcome styles */
+#welcome {
+    background-color: #0f172a;
+    height: 70vh;
+    color: white;
+    padding: 5% 10% 5% 10%
+}
+
+#welcome h1 {
+    font-weight: 900;
+    text-shadow: 0.5px 0.5px white;
+    font-size: 4rem;
+}
+
+#welcome h2 {
+    font-size: 2rem;
+}
+
+#welcomeMop {
+    width: 35%;
+    border-radius: 50%;
+    float: right;
+}
+
+
+.typewriter {
+    width: 0;
+    overflow: hidden;
+    white-space: nowrap;
+    margin: 0 auto;
+    letter-spacing: .15em;
+    animation-name: typing;
+    animation-duration: 1s;
+    animation-timing-function: linear;
+    animation-fill-mode: forwards;
+}
+
+@keyframes typing {
+    from {
+        width: 0
+    }
+
+    to {
+        width: 65%
+    }
+}
+
+li.typewriter {
+    font-size: 1.5rem;
+    font-weight: 100;
+    text-indent: 5%;
+    margin-top: 2%;
+    text-align: left;
+    font-style: italic;
+
+}
+
+.typewriterContainer>ul {
+    margin-top: 3%;
+    display: flex;
+    flex-direction: column;
+    margin-right: 5%;
+}
+
+/* About styles */
+
+#about {
+    background-color: #f5f6f7;
+    height: 40vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    margin: 3% 5% 3% 5%;
+}
+
+#about h2 {
+    color: #0a0a23;
+    text-shadow: 0.5px 0.5px 2px #0a0a23;
+    font-weight: 900;
+    font-size: 2rem;
+}
+
+.divided {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin: 2% 7% 2% 7%;
+
+}
+
+#aboutImg {
+    height: 250px;
+    border-right: 2px double rgb(128, 128, 128);
+}
+
+#aboutText {
+    margin-left: 5%;
+    text-align: center;
+    align-self: center;
+
+    line-height: 2rem;
+}
+
+#resumeLink {
+    text-decoration: none;
+    color: #0a0a23;
+    font-weight: 900;
+    padding: 1rem;
+    transition: 0.2s ease-in-out;
+    color: #0a0a23;
+    font-size: 1.3rem;
+}
+
+#resumeLink:hover {
+    font-size: 1.5rem;
+    text-shadow: 1px 1px 3px black;
+}
+
+/* Skills styles */
+
+#skills {
+    background-color: #f5f6f7;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 3% 5% 3% 5%;
+    color: #0a0a23;
+
+}
+
+#skills h2 {
+    text-shadow: 0.5px 0.5px 2px #0a0a23;
+    font-weight: 900;
+    font-size: 2rem;
+
+}
+
+
+.divided {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin: 2% 7% 2% 7%;
+
+}
+
+#technos,
+#tools {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: wrap;
+
+}
+
+#technos h4,
+#tools h4 {
+    font-size: 1.4rem;
+
+}
+
+
+
+#tools {
+    border-left: 2px solid gray;
+
+}
+
+#technos {
+    border-right: 2px solid gray;
+
+}
+
+#technos ul {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 15px;
+    justify-content: center;
+    align-items: center;
+
+}
+
+#tools ul {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 15px;
+    justify-content: center;
+    align-items: center;
+}
+
+#office {
+    font-weight: 100;
+    font-size: 1.1rem
+}
+
+#technos ul li,
+#tools ul li {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 10px;
+    margin: 15px;
+    justify-content: center;
+    align-items: center;
+    transition: transform 0.2s ease-in-out;
+
+
+}
+
+#technos ul li:hover,
+#tools ul li:hover {
+    transform: scale(1.3);
+    font-weight: 900;
+
+
+}
+
+#technos ul li img,
+#tools ul li img {
+    margin: 1%;
+
+}
+
+/* Projects styles */
+
+
+#projects {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #f1f6f7;
+
+
+}
+
+#projects h2 {
+    margin-top: 2%;
+    color: #0a0a23;
+    text-shadow: 0.5px 0.5px 2px #0a0a23;
+    font-weight: 900;
+    font-size: 2rem;
+}
+
+.case {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    border: 4px solid #0a0a2380;
+    width: 80%;
+    min-height: 30vh;
+    margin: 2% 0;
+    gap: 2%
+}
+
+.casePrewiew {
+    color: #0a0a23;
+
+}
+
+.caseInfo {
+    color: #0a0a23;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.caseName {
+    color: #0a0a23;
+
+    margin-top: 2%;
+    font-size: 1.5rem;
+}
+
+.caseDetail {
+    color: #0a0a23;
+    margin: 0 1%;
+}
+
+.labels {
+    color: #0a0a23;
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+
+}
+
+.label {
+    color: #0a0a23;
+
+    padding: 1%;
+    margin: 1%;
+    background-color: #adff2f88;
+    border-radius: 20px;
+}
+
+.codeLink {
+    width: 50%;
+    max-width: 200px;
+    text-align: center;
+    color: #0a0a23;
+
+    padding: 1%;
+    margin: 1%;
+    text-decoration: none;
+    background-color: #0f172acc;
+    color: #f5f6f7;
+    transition: transform 0.2s ease-in-out;
+    transition: background-color 0.5s ease-in-out;
+    border-radius: 10px;
+
+}
+
+.prewiewLink {
+    width: 50%;
+    max-width: 200px;
+    text-align: center;
+    color: #0a0a23;
+    padding: 1%;
+    margin: 1%;
+
+    text-decoration: none;
+    background-color: #dc143ccc;
+    color: #ffffff;
+    transition: transform 0.2s ease-in-out;
+    transition: background-color 0.5s ease-in-out;
+    border-radius: 10px;
+
+}
+
+
+.prewiewLink:hover {
+    transform: scale(1.1);
+    font-weight: 900;
+    background-color: #dc143c;
+
+}
+
+.codeLink:hover {
+    transform: scale(1.1);
+    font-weight: 900;
+    background-color: #0f172a;
+
+}
+
+/* footer styles */
+
+#footer {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: #0a0a23;
+    color: #f5f6f7;
+    padding: 2%;
+}
+
+
+#contact {
+
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#documents {
+
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#contact h3,
+#documents h3 {
+    margin: 3%;
+}
+
+#contact p,
+#documents p {
+    margin: 3%;
+}
+
+#contact p a,
+#documents p a {
+    color: #f5f6f7;
+    text-decoration: none;
+}
+
+#copyright {
+    text-align: center;
+    background-color: #0a0a23;
+    color: #f5f6f7
+}

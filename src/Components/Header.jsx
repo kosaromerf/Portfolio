@@ -1,28 +1,30 @@
 import React from "react";
-import styles from "../Styles/Header.module.css";
 import logoDarkBg from "../Assets/logoDarkBg.png";
 import { useEffect } from "react";
 import headerVisibility from "../Utils/headerVisibility";
+import scroolTop from "../Utils/scrollTop";
 
 const Header = () => {
   useEffect(() => {
     headerVisibility();
+    scroolTop();
   }, []);
   return (
     <div id="header">
-      <img src={logoDarkBg} alt="logo" id="logo" />
-
+      <a href="#welcome">
+        <img src={logoDarkBg} alt="logo" id="logo" onClick={scroolTop} />
+      </a>
       <nav id="navbar">
-        <a href="#" id="about-lnk" className="link">
+        <a href="#about" id="about-link" className="nav-link">
           About
         </a>
-        <a href="#" id="skill-lnk" className="link">
+        <a href="#skills" id="skill-link" className="nav-link">
           Skills
         </a>
-        <a href="#" id="project-lnk" className="link">
+        <a href="#projects" id="project-link" className="nav-link">
           Projects
         </a>
-        <a href="#" id="contact-lnk" className="link">
+        <a href="#footer" id="contact-link" className="nav-link">
           Contact
         </a>
       </nav>
