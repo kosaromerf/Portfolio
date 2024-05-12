@@ -17,7 +17,7 @@ const animationDelay = () => {
     document.head.appendChild(style);
 
     e.style.animation = `typing-${index} ${contentLength / 20}s forwards,
-      blink-caret 0.5s forwards infinite,
+      blink-caret 0.6s forwards infinite,
       matrix ${contentLength / 20}s steps(40, end)`;
 
     e.style.animationDelay = `${delay / 20}s`;

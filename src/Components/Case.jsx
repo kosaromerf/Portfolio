@@ -1,4 +1,5 @@
 import React from "react";
+import Preview from "./Preview";
 
 const Case = ({ prewiew, name, detail, techs, codeLink, prewiewLink }) => {
   let labels = techs.map((tech, index) => (
@@ -9,7 +10,7 @@ const Case = ({ prewiew, name, detail, techs, codeLink, prewiewLink }) => {
 
   return (
     <div className="case">
-      <section className="casePrewiew">{prewiew}</section>
+      <Preview prewiew={prewiew} />
       <section className="caseInfo">
         <h3 className="caseName">{name}</h3>
         <p className="caseDetail">{detail}</p>
@@ -28,7 +29,7 @@ const Case = ({ prewiew, name, detail, techs, codeLink, prewiewLink }) => {
           target="_blank"
           rel="noopener noreferrer"
         >
-          Live Review
+          Live Preview
         </a>
       </section>
     </div>
