@@ -1,7 +1,7 @@
 import React from "react";
 import Preview from "./Preview";
 
-const Case = ({ prewiew, name, detail, techs, codeLink, prewiewLink }) => {
+const Case = ({ preview, name, detail, techs, codeLink, previewLink }) => {
   let labels = techs.map((tech, index) => (
     <p key={index} className="label">
       {tech}
@@ -10,7 +10,7 @@ const Case = ({ prewiew, name, detail, techs, codeLink, prewiewLink }) => {
 
   return (
     <div className="case">
-      <Preview prewiew={prewiew} />
+      <Preview preview={preview} />
       <section className="caseInfo">
         <h3 className="caseName">{name}</h3>
         <p className="caseDetail">{detail}</p>
@@ -25,7 +25,7 @@ const Case = ({ prewiew, name, detail, techs, codeLink, prewiewLink }) => {
         </a>
         <a
           className="prewiewLink"
-          href={prewiewLink}
+          href={previewLink}
           target="_blank"
           rel="noopener noreferrer"
         >
