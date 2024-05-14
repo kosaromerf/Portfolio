@@ -8,6 +8,7 @@
   --green: #adff2f;
   --red: #dc143c;
   --redhalf: #dc143ccc;
+
 }
 
 /* Reset */
@@ -517,78 +518,122 @@ li.typewriter {
 }
 
 
-
 /* footer styles */
 
-#footer {
-  display: flex;
-  justify-content: space-evenly;
-  align-items: center;
-  background-color: #0a0a23;
-  color: #f5f6f7;
-  padding: 2%;
-}
-
-
-#contact {
-
-  width: 30%;
+#footerMain {
   display: flex;
   flex-direction: column;
-  align-items: center;
+  background-color: var(--dark);
+  color: var(--light);
+  gap: 2%;
+  padding: 2% 2% 0 2%;
+
 }
 
-#documents {
-
-  width: 30%;
+#contact a {
+  border-radius: 50%;
   display: flex;
-  flex-direction: column;
+  width: 3rem;
+  height: 3rem;
+  font-size: 1.5rem;
+  justify-content: center;
   align-items: center;
+  border: 2px solid var(--light);
+  background-color: var(--dark);
+  transition: 0.3s ease-in-out;
+  margin: 3%;
+}
+
+#contact a:hover {
+  background-color: var(--red);
+}
+
+#footerMain * {
+  text-decoration: none;
+  text-align: center;
+  vertical-align: center;
+  justify-content: center;
+  align-items: center;
+  color: var(--light);
+}
+
+#outLinks {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  justify-content: center;
+  width: 100%;
+  height: auto;
+
 }
 
 #contact h3,
 #documents h3 {
-  margin: 3%;
+  font-size: 1.7rem;
+  margin-bottom: 1vh;
+  width: 100%;
 }
 
-#contact p,
-#documents p {
-  margin: 3%;
+#contact,
+#documents {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
 }
 
-#contact p a,
-#documents p a {
-  color: #f5f6f7;
-  text-decoration: none;
+#contactLinks {
+  width: 100%;
 }
 
-#copyright {
-  text-align: center;
-  background-color: #0a0a23;
-  color: #f5f6f7
+#myemail {
+  width: 100%;
+  display: flex;
+  margin-bottom: 1vh;
+  font-size: 1.2rem;
+  width: 100%;
 }
 
-#top {
-  border-radius: 50%;
-  width: 30px;
-  height: 30px;
-  position: fixed;
-  bottom: 0;
-  right: 0;
-  background-color: var(--green);
-  display: none;
-  justify-content: center;
-  align-items: center;
+#mailicon {
+  font-size: 1.3rem;
+  margin-left: 3%;
+}
+
+#icons {
+  width: 100%;
+  margin-bottom: 4%;
+  display: flex;
+}
+
+#documents {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+}
+
+#resume,
+#fullPortfolio {
+  background-color: orange;
+  font-size: 1.2rem;
+  margin: 1.5%;
+  padding: 0.75%;
+  border-radius: 15px;
+  color: black;
+  border: 0;
+  transition: 0.3s ease-in-out;
+}
+
+#resume:hover {
+  background-color: var(--red);
+}
+
+#fullPortfolio:hover {
+  background-color: gray;
+  color: var(--light);
 }
 
 
-/* --------------------------------------------------------------------------
---------------------------------------------------------------------------
---------------------------------------------------------------------------
---------------------------------------------------------------------------
---------------------------------------------------------------------------
---------------------------------------------------------------------------
--------------------------------------------------------------------------- */
+
+
 
 @media only screen and (max-width:480px) {
 
@@ -709,6 +754,14 @@ li.typewriter {
   .labels {
     justify-content: center;
   }
+
+  /* footer */
+
+  #outLinks {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 2%;
+  }
 }
 
 @media only screen and (min-width:480px) and (max-width: 599px) {
@@ -806,6 +859,14 @@ li.typewriter {
   .labels {
     justify-content: center;
   }
+
+  /* footer */
+
+  #outLinks {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 2%;
+  }
 }
 
 @media only screen and (min-width:600px) and (max-width: 767px) {
@@ -883,6 +944,14 @@ li.typewriter {
 
   .labels {
     justify-content: center;
+  }
+
+  /* footer */
+
+  #outLinks {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 2%;
   }
 }
 

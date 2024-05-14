@@ -1,5 +1,4 @@
 import React from "react";
-import { useState } from "react";
 import Case from "./Case";
 import name1 from "../Assets/placeholder/name1.jpg";
 import name2 from "../Assets/placeholder/name2.jpg";
