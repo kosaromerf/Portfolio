@@ -486,8 +486,7 @@ li.typewriter {
 /* About styles */
 
 #about {
-  background-color: #f5f6f7;
-  height: 40vh;
+  background-color: var(--light);
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -496,46 +495,28 @@ li.typewriter {
 }
 
 #about h2 {
-  color: #0a0a23;
-  text-shadow: 0.5px 0.5px 2px #0a0a23;
+  color: var(--dark);
+  text-shadow: 0.5px 0.5px 2px var(--dark);
   font-weight: 900;
-  font-size: 2rem;
-}
-
-.divided {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  margin: 2% 7% 2% 7%;
-
-}
-
-#aboutImg {
-  height: 250px;
-  border-right: 2px double rgb(128, 128, 128);
+  font-size: 3rem;
 }
 
 #aboutText {
-  margin-left: 5%;
+  margin-top: 2%;
   text-align: center;
   align-self: center;
-
   line-height: 2rem;
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: var(--dark);
 }
 
-#resumeLink {
+#about a {
   text-decoration: none;
-  color: #0a0a23;
-  font-weight: 900;
-  padding: 1rem;
-  transition: 0.2s ease-in-out;
-  color: #0a0a23;
-  font-size: 1.3rem;
+  color: var(--red);
 }
 
-#resumeLink:hover {
-  font-size: 1.5rem;
-  text-shadow: 1px 1px 3px black;
-}
+
 
 /* footer styles */
 
