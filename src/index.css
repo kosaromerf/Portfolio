@@ -32,7 +32,7 @@
   align-items: center;
   padding: 0 5%;
   background-color: var(--light);
-  position: sticky;
+  position: fixed;
   top: 0;
   left: 0;
   opacity: 0;
@@ -79,9 +79,9 @@
 /* Welcome styles */
 #welcome {
   background-color: var(--dark);
-  height: 93vh;
+  height: 100vh;
   color: var(--light);
-  padding: 8vh 10% 5% 10%;
+  padding: 15vh 10% 5% 10%;
   display: flex;
   justify-content: space-evenly;
   align-items: center;
@@ -668,7 +668,7 @@ li.typewriter {
 
   #welcome {
     width: 100%;
-    padding: 0;
+    padding: 3vh;
     margin: 0;
   }
 
@@ -793,8 +793,9 @@ li.typewriter {
 
   #welcome {
     width: 100%;
-    padding: 0;
+    padding: 3vh;
     margin: 0;
+
   }
 
   #welcome * {
@@ -832,7 +833,8 @@ li.typewriter {
   /* skills */
 
   #skillContainer {
-    width: 100%
+    width: 100%;
+
   }
 
   #core img {
@@ -1025,21 +1027,4 @@ li.typewriter {
   /* skills */
   /* projects */
 
-}
-
-@media only screen and (min-width:1200px) and (max-width: 1919px) {
-  /* desktopscreen */
-  /* header */
-  /* welcome */
-  /* skills */
-  /* projects */
-
-}
-
-@media only screen and (min-width:1920px) {
-  /*  big desktops or highdef */
-  /* header */
-  /* welcome */
-  /* skills */
-  /* projects */
 }
