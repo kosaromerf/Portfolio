@@ -1,4 +1,4 @@
-const scroolTop = () => {
+const scrollTop = () => {
   document.getElementById("logo").addEventListener("click", function (event) {
     event.preventDefault();
     window.scrollTo({
@@ -8,4 +8,4 @@ const scroolTop = () => {
   });
 };
 
-export default scroolTop;
+export default scrollTop;

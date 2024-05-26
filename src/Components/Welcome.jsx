@@ -1,5 +1,5 @@
 import React from "react";
-import welcomeLight from "../Assets/welcomeLight.jpeg";
+import welcomeLight from "../Assets/welcomeLight.webp";
 import { useEffect } from "react";
 import animationDelay from "../Utils/animationDelay";
 

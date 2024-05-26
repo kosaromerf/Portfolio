@@ -1,5 +1,6 @@
 import React from "react";
 import Preview from "./Preview";
+import PropTypes from "prop-types";
 
 const Case = ({ preview, name, detail, techs, codeLink, previewLink }) => {
   let labels = techs.map((tech, index) => (
@@ -34,6 +35,15 @@ const Case = ({ preview, name, detail, techs, codeLink, previewLink }) => {
       </section>
     </div>
   );
+};
+
+Case.propTypes = {
+  preview: PropTypes.array.isRequired,
+  name: PropTypes.string.isRequired,
+  detail: PropTypes.string.isRequired,
+  techs: PropTypes.array.isRequired,
+  codeLink: PropTypes.string.isRequired,
+  previewLink: PropTypes.string.isRequired,
 };
 
 export default Case;

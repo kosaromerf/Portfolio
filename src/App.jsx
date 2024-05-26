@@ -8,15 +8,14 @@ import Footer from "./Components/Footer";
 
 const App = () => {
   return (
-    <div>
+    <>
       <Header />
       <Welcome />
       <About />
       <Skills />
       <Projects />
-
       <Footer />
-    </div>
+    </>
   );
 };
 

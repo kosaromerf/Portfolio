@@ -2,7 +2,7 @@ import React from "react";
 
 const About = () => {
   return (
-    <div id="about">
+    <section id="about">
       <h2>About Me</h2>
       <p id="aboutText">
         I'm Omer Kosar, a budding Frontend Web developer with a Mechanical
@@ -21,7 +21,7 @@ const About = () => {
         </span>
         , I'm on a quest to create impactful digital experiences.
       </p>
-    </div>
+    </section>
   );
 };
 

@@ -11,7 +11,7 @@ const Contact = () => {
   return (
     <section id="contact">
       <h3>Contact</h3>
-      <p id="contactLinks">
+      <div id="contactLinks">
         <p id="myemail">
           kosaromerf@gmail.com <MdOutlineContentCopy id="mailicon" />
         </p>
@@ -35,7 +35,7 @@ const Contact = () => {
             <FaUpwork className="icon" />
           </a>
         </div>
-      </p>
+      </div>
     </section>
   );
 };
