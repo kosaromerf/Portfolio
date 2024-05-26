@@ -459,7 +459,8 @@ li.typewriter {
 }
 
 .hidden {
-  animation: disappear 0s forwards ease-in-out
+  animation: disappear 0s forwards ease-in-out;
+  display: none;
 }
 
 @keyframes disappear {
