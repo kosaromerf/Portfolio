@@ -8,7 +8,7 @@ const Welcome = () => {
     animationDelay();
   });
   return (
-    <div id="welcome">
+    <section id="welcome">
       <img
         src={welcomeLight}
         alt="a illistruation of a penguan listening music and coding"
@@ -24,9 +24,9 @@ const Welcome = () => {
           <span> scalable</span> projects
         </p>
 
-        <h4 className="typewriter" id="projectQuality">
+        <h2 className="typewriter" id="projectQuality">
           Project Qualities
-        </h4>
+        </h2>
         <ul id="qualityList">
           <li className="typewriter">-Responsive</li>
           <li className="typewriter">-Accessible</li>
@@ -37,7 +37,7 @@ const Welcome = () => {
           <li className="typewriter">-Single or MultiPage</li>
         </ul>
       </div>
-    </div>
+    </section>
   );
 };
 

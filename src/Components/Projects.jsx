@@ -29,7 +29,7 @@ const Projects = () => {
   ];
 
   return (
-    <div id="projects">
+    <section id="projects">
       <h2>Projects</h2>
       {/*       <Case
         preview={placeholder}
@@ -61,7 +61,7 @@ const Projects = () => {
         codeLink={"#"}
         previewLink={"#"}
       /> */}
-    </div>
+    </section>
   );
 };
 

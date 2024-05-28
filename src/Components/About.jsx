@@ -9,7 +9,9 @@ const About = () => {
         Engineering background. I have a passion for crafting user-friendly web
         applications. You can check my{" "}
         <span>
-          <a href="#skills">skillset</a>
+          <a href="#skills" title="Go to Skills">
+            skillset
+          </a>
         </span>
         .
         <br />
@@ -17,7 +19,9 @@ const About = () => {
         As a voracious learner, I devour knowledge to fuel my journey. Eager to
         channel my analytical skills and passion into innovative{" "}
         <span>
-          <a href="#projects">projects</a>
+          <a href="#projects" title="Go to Project Sample">
+            projects
+          </a>
         </span>
         , I'm on a quest to create impactful digital experiences.
       </p>

@@ -5,13 +5,13 @@ const Documents = () => {
     <section id="documents">
       <h3>Documents</h3>
 
-      <button href="#" id="resume">
+      <a href="#" id="resume" title="Go to Personal Website">
         More About me
-      </button>
+      </a>
 
-      <button href="#" id="fullPortfolio">
+      <a href="#" id="fullPortfolio" title="Go to Project List Page">
         Full List of Projects
-      </button>
+      </a>
     </section>
   );
 };

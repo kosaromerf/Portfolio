@@ -6,8 +6,8 @@
   --lighthalf: #f5f6f7aa;
   --greenhalf: #adff2f88;
   --green: #adff2f;
-  --red: #dc143c;
-  --redhalf: #dc143ccc;
+  --red: #dc141e;
+  --redhalf: #970d1bdd;
 
 }
 
@@ -417,7 +417,7 @@ li.typewriter {
   margin: 1%;
   text-decoration: none;
   background-color: var(--redhalf);
-  color: var(--light);
+  color: white;
   transition: transform 0.2s ease-in-out;
   transition: background-color 0.5s ease-in-out;
   border-radius: 10px;
@@ -496,7 +496,8 @@ li.typewriter {
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
-  padding: 8vh 10% 5% 10%
+  padding: 8vh 10% 5% 10%;
+
 }
 
 #about h2 {
@@ -633,6 +634,21 @@ li.typewriter {
 #fullPortfolio:hover {
   background-color: gray;
   color: var(--light);
+}
+
+#clipBoard {
+  background-color: transparent;
+
+  margin-left: 1vh;
+  transition: 0.5s ease-in-out;
+}
+
+#clipBoard:hover {
+  transform: scale(1.1);
+}
+
+html {
+  scroll-behavior: smooth;
 }
 
 

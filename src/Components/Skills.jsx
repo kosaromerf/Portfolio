@@ -17,11 +17,11 @@ import VSCode from "../Assets/icons/VSCode.png";
 
 const Skills = () => {
   return (
-    <div id="skills">
+    <section id="skills">
       <h2>My Skills</h2>
       <section id="skillContainer">
         <div id="core">
-          <h4> Core Technologies</h4>
+          <h3> Core Technologies</h3>
           <ul>
             <ListItem img={ReactJS} content={"React"} />
             <ListItem img={NodeJs} content={"NodeJs"} />
@@ -52,7 +52,7 @@ const Skills = () => {
           </div>
         </div>
       </section>
-    </div>
+    </section>
   );
 };
 
