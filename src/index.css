@@ -1,14 +1,13 @@
 /* Variables */
 :root {
-  --dark: #0a0a23;
-  --darkhalf: #0a0a23cc;
+  --dark: #0f172a;
+  --darkhalf: #0f172acc;
   --light: #f5f6f7;
   --lighthalf: #f5f6f7aa;
   --greenhalf: #adff2f88;
   --green: #adff2f;
   --red: #dc141e;
   --redhalf: #970d1bdd;
-
 }
 
 /* Reset */
@@ -17,7 +16,6 @@
   padding: 0;
   box-sizing: border-box;
   font-family: Roboto, Helvetica, Arial, sans-serif;
-
 }
 
 #root {
@@ -73,7 +71,6 @@
 
 .nav-link:hover {
   transform: scale(1.5);
-  text-shadow: 1px 1px 3px var(--dark);
 }
 
 /* Welcome styles */
@@ -117,7 +114,11 @@
   white-space: nowrap;
   margin: 0 3vw;
   margin-top: 2%;
-  border: 0px solid var(--green)
+  border: 0px solid var(--green);
+}
+
+#qualityList {
+  height: 40%;
 }
 
 /* The typing effect */
@@ -148,9 +149,7 @@
   }
 }
 
-#projectQuality {
-  font-size: 1.7rem;
-}
+
 
 li.typewriter {
   font-size: 1.5rem;
@@ -186,6 +185,12 @@ li.typewriter {
   font-weight: 900;
   font-size: 3rem;
   margin-bottom: 2%;
+}
+
+#skills h3 {
+  font-size: 1.7rem;
+  margin-bottom: 2vh;
+  margin-top: 2vh;
 }
 
 #core h4 {
@@ -352,6 +357,7 @@ li.typewriter {
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
+  padding: 1%;
 }
 
 .caseName {
@@ -638,34 +644,31 @@ li.typewriter {
 
 #clipBoard {
   background-color: transparent;
-
+  font-size: 1rem;
   margin-left: 1vh;
+  width: 30px;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   transition: 0.5s ease-in-out;
-}
-
-#clipBoard:hover {
-  transform: scale(1.1);
 }
 
 html {
   scroll-behavior: smooth;
+  background-color: #0f172a;
 }
-
-
 
 
 
 @media only screen and (max-width:480px) {
 
-  /* phone */
-  /* header */
   #logo {
     display: none;
   }
 
   #navbar {
     width: 100%;
-    max-width: 800px;
   }
 
   .nav-link {
@@ -674,10 +677,8 @@ html {
 
   .nav-link:hover {
     transform: scale(1.3);
-    text-shadow: 1px 1px 1px black;
   }
 
-  /* welcome */
   #welcomeMop {
     display: none;
   }
@@ -728,8 +729,6 @@ html {
     font-size: 1.5rem;
   }
 
-  /* skills */
-
   #skillContainer {
     width: 100%
   }
@@ -757,7 +756,6 @@ html {
     font-size: 4vw;
   }
 
-  /* projects */
   .case {
     display: flex;
     flex-direction: column;
@@ -775,8 +773,6 @@ html {
     justify-content: center;
   }
 
-  /* footer */
-
   #outLinks {
     display: flex;
     flex-direction: column;
@@ -786,8 +782,6 @@ html {
 
 @media only screen and (min-width:480px) and (max-width: 599px) {
 
-  /* tablet or big phone */
-  /* header */
   #logo {
     display: none;
   }
@@ -802,7 +796,6 @@ html {
     text-shadow: 1px 1px 1px black;
   }
 
-  /* welcome */
   #welcomeMop {
     display: none;
   }
@@ -846,11 +839,8 @@ html {
     align-items: center;
   }
 
-  /* skills */
-
   #skillContainer {
     width: 100%;
-
   }
 
   #core img {
@@ -867,7 +857,6 @@ html {
     text-align: center;
   }
 
-  /* projects */
   .case {
     display: flex;
     flex-direction: column;
@@ -882,8 +871,6 @@ html {
     justify-content: center;
   }
 
-  /* footer */
-
   #outLinks {
     display: flex;
     flex-direction: column;
@@ -893,8 +880,6 @@ html {
 
 @media only screen and (min-width:600px) and (max-width: 767px) {
 
-  /* tablet */
-  /* header */
   #navbar {
     width: 100%;
     max-width: 800px;
@@ -905,14 +890,12 @@ html {
     text-shadow: 1px 1px 1px black;
   }
 
-  /* welcome */
   #welcome {
     flex-direction: column;
   }
 
   #whoIAm,
-  #greetings,
-  #projectQuality {
+  #greetings {
     text-align: center;
   }
 
@@ -938,7 +921,6 @@ html {
     gap: 4%
   }
 
-  /* skills */
   #core img {
     width: 40px;
     height: 40px
@@ -953,7 +935,6 @@ html {
     text-align: center;
   }
 
-  /* projects */
   .case {
     display: flex;
     flex-direction: column;
@@ -968,8 +949,6 @@ html {
     justify-content: center;
   }
 
-  /* footer */
-
   #outLinks {
     display: flex;
     flex-direction: column;
@@ -979,21 +958,17 @@ html {
 
 @media only screen and (min-width:768px) and (max-width: 991px) {
 
-  /*  small laptop or tableet */
-  /* header */
   #navbar {
     width: 100%;
     max-width: 800px;
   }
 
-  /* welcome */
   #welcome {
     flex-direction: column;
   }
 
   #whoIAm,
-  #greetings,
-  #projectQuality {
+  #greetings {
     text-align: center;
   }
 
@@ -1020,17 +995,10 @@ html {
     align-items: center;
     gap: 4%
   }
-
-  /* skills */
-  /* projects */
-
 }
 
 @media only screen and (min-width:992px) and (max-width: 1199px) {
 
-  /* laptop */
-  /* header */
-  /* welcome */
   #welcomeMop {
     width: 30vw;
     height: 30vw;
@@ -1039,8 +1007,4 @@ html {
   #typewriterContainer {
     width: 65vw;
   }
-
-  /* skills */
-  /* projects */
-
 }

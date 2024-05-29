@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react";
+import PropTypes from "prop-types";
 
 const Preview = ({ preview }) => {
   const [content, setContent] = useState([]);
@@ -36,4 +37,9 @@ const Preview = ({ preview }) => {
   }, [images]);
   return <div className="previewer">{content}</div>;
 };
+
+Preview.propTypes = {
+  preview: PropTypes.array.isRequired,
+};
+
 export default Preview;

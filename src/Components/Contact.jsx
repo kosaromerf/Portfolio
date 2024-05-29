@@ -24,22 +24,53 @@ const Contact = () => {
             href="mailto:kosaromerf@gmail.com"
             className="iconLink"
             title="E-Mail"
+            target="_blank"
           >
             <TfiEmail className="icon" />
           </a>
-          <a href="#" className="iconLink" title="Linkedin">
+          <a
+            href="https://www.linkedin.com/in/kosaromerf/"
+            className="iconLink"
+            title="Linkedin"
+            aria-label="Go to Linkedin Profile"
+            target="_blank"
+          >
             <GrLinkedinOption className="icon" />
           </a>
-          <a href="#" className="iconLink" title="GitHub">
+          <a
+            href="https://github.com/kosaromerf"
+            className="iconLink"
+            title="GitHub"
+            target="_blank"
+            aria-label="Go to GitHub Profile"
+          >
             <FiGithub className="icon" />
           </a>
-          <a href="#" className="iconLink" title="Fiverr">
+          <a
+            href="https://www.fiverr.com/kosaromer"
+            className="iconLink"
+            title="Fiverr"
+            target="_blank"
+            aria-label="Go to Fiverr Profile"
+          >
             <TbBrandFiverr className="icon" />
           </a>
-          <a href="#" className="iconLink" title="Freelancer">
+          <a
+            href="https://www.freelancer.com/u/KosarOmer?sb=t"
+            className="iconLink"
+            title="Freelancer"
+            target="_blank"
+            aria-label="Go to Freelancer Profile"
+          >
             <SiFreelancer className="icon" />
           </a>
-          <a href="#" className="iconLink" title="Upwork">
+          <a
+            href="https://www.upwork.com/freelancers/~015701b0dec58e4016"
+            className="iconLink"
+            title="Upwork"
+            target="_blank"
+            aria-label="Go to Upwork Profile"
+          >
             <FaUpwork className="icon" />
           </a>
         </div>

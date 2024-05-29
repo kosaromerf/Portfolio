@@ -1,7 +1,6 @@
 import React from "react";
 import Contact from "./Contact";
 import Documents from "./Documents";
-
 import { FaRegCopyright } from "react-icons/fa6";
 
 const Footer = () => {
